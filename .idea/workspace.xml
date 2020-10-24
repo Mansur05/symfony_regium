@@ -10,19 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0434fcd9-7b8b-4f9b-a501-7663f156b360" name="Default Changelist" comment="Make Entities and DataBase">
-      <change afterPath="$PROJECT_DIR$/public/thumbnails/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/164d3363-5b72-444f-aea9-2ec80676a858.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/164d3363-5b72-444f-aea9-2ec80676a858.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony_regium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_regium.iml" afterDir="false" />
+    <list default="true" id="0434fcd9-7b8b-4f9b-a501-7663f156b360" name="Default Changelist" comment="Added Fixtures. (Simple fix Post Entity - add thumbnail)">
+      <change afterPath="$PROJECT_DIR$/src/Controller/APIv1Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/API/v1/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/API/v1/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/APIv2Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +106,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller/API/v2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -123,7 +117,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Player\PhpstormProjects\symfony_regium\src\Controller\API\v2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Player\PhpstormProjects\symfony_regium\src\Controller" />
       <recent name="C:\Users\Player\PhpstormProjects\symfony_regium\src\Controller\API\v1" />
       <recent name="C:\Users\Player\PhpstormProjects\symfony_regium" />
     </key>
@@ -137,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603548001918</updated>
       <workItem from="1603548003034" duration="307000" />
-      <workItem from="1603548406974" duration="6525000" />
+      <workItem from="1603548406974" duration="7953000" />
     </task>
     <task id="LOCAL-00001" summary="Install Symfony">
       <created>1603548908695</created>
@@ -167,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603550933959</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Fixtures. (Simple fix Post Entity - add thumbnail)">
+      <created>1603571703448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603571703448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,9 +195,14 @@
     <MESSAGE value="Install doctrine, maker" />
     <MESSAGE value="Make controller" />
     <MESSAGE value="Make Entities and DataBase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make Entities and DataBase" />
+    <MESSAGE value="Added Fixtures. (Simple fix Post Entity - add thumbnail)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Fixtures. (Simple fix Post Entity - add thumbnail)" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="317" y="112" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603572354982">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="317" y="112" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1603572354982" />
     <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1603548911348">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

@@ -29,8 +29,8 @@ class AppFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        $this->loadPosts('Science', $manager, 3);
-        $this->loadPosts('COVID', $manager, 6);
+        $this->loadPosts('Science', $manager, 13);
+        $this->loadPosts('COVID', $manager, 9);
         $this->loadPosts('Politics', $manager, 7);
 
         $this->loadPosts('Finance', $manager); //empty category
