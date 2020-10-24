@@ -28,6 +28,11 @@ class Post
     private $slug;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $thumbnail;
+
+    /**
      * @ORM\Column(type="text")
      */
     private $description;
@@ -106,5 +111,15 @@ class Post
         $this->category = $category;
 
         return $this;
+    }
+
+    public function getThumbnail(): ?string
+    {
+        return $this->thumbnail;
+    }
+
+    public function setThumbnail(string $thumbnail)
+    {
+        $this->thumbnail = $thumbnail;
     }
 }
