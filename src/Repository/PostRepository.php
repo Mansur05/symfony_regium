@@ -20,11 +20,11 @@ class PostRepository extends ServiceEntityRepository
         parent::__construct($registry, Post::class);
     }
 
-    public function findByCategory(Category $category, int $limit = null)
+    public function findByCategory(int $categoryId, int $limit = null)
     {
         $qb = $this->createQueryBuilder('p')
             ->andWhere('p.category = :categoryID')
-            ->setParameter('categoryID', $category->getId())
+            ->setParameter('categoryID', $categoryId)
             ->orderBy('p.publishedAt', 'DESC');
 
         if (false === empty($limit))

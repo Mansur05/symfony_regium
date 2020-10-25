@@ -33,7 +33,7 @@ class PostAPIController extends AbstractController
 
         $posts = $this->getDoctrine()
             ->getRepository(Post::class)
-            ->findByCategory($category, 5)
+            ->findByCategory($category->getId(), 5)
         ;
 
         if (true === empty($posts))
