@@ -20,7 +20,9 @@
         "doctrine/doctrine-fixtures-bundle": "^3.3",
         "fzaninotto/faker": "^1.9",
         "mmo/faker-images": "^0.2.0",
-        "symfony/maker-bundle": "^1.22"
+        "symfony/browser-kit": "5.1.*",
+        "symfony/maker-bundle": "^1.22",
+        "symfony/phpunit-bridge": "^5.1"
     },
     "config": {
         "optimize-autoloader": true,
