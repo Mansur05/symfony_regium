@@ -20,7 +20,7 @@ class PostRepository extends ServiceEntityRepository
         parent::__construct($registry, Post::class);
     }
 
-    public function findByCategory(int $categoryId, int $limit = null)
+    public function findByCategoryId(int $categoryId, int $limit = null)
     {
         $qb = $this->createQueryBuilder('p')
             ->andWhere('p.category = :categoryID')
