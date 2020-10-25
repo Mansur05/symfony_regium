@@ -48,6 +48,11 @@ class Post
      */
     private $category;
 
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $publishedAt;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -121,5 +126,15 @@ class Post
     public function setThumbnail(string $thumbnail)
     {
         $this->thumbnail = $thumbnail;
+    }
+
+    public function getPublishedAt(): \DateTime
+    {
+        return $this->publishedAt;
+    }
+
+    public function setPublishedAt(\DateTime $publishedAt): void
+    {
+        $this->publishedAt = $publishedAt;
     }
 }
