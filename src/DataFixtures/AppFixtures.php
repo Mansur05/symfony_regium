@@ -48,6 +48,7 @@ class AppFixtures extends Fixture
             $post->setContent($this->faker->text(1000));
             $post->setSlug($this->slugger->slug($post->getTitle()));
             $post->setThumbnail($post->getSlug() . '.jpg');
+            $post->setPublishedAt($this->faker->dateTime());
 
             $thumbnail = $this->faker->picsum(null, 250, 250, true);
             file_put_contents($this->parameterBag->get('kernel.project_dir') . '/public/thumbnails/' . $post->getThumbnail(), file_get_contents($thumbnail));
